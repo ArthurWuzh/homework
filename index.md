@@ -2,7 +2,7 @@
 
 ##欢迎来到吴振华的blog
 
-![](/images/shouye.jpg)
+![](images/shouye.jpg)
 
 ## 课后作业
 
