@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>36e1yg9q02gfa</unique-id>
+    <saved-with-version>26200</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>800</width>
+        <height>800</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="TiledBackground" sid="541612731801560">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Arthur wu\Desktop\background.jpg" />
+        </object-type>
+        <object-type name="iron" sid="418507236319879">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="902570835212869" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500912" original-source="C:\Users\Arthur wu\Desktop\p.png">
+                        <collision-poly>
+                            <point x="0.281667" y="0.375139" />
+                            <point x="0.5" y="0.0255272" />
+                            <point x="0.7625" y="0.316315" />
+                            <point x="0.8875" y="0.499445" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0383333" y="0.499445" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="499883686479120">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570031517903880" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500833" original-source="C:\Users\Arthur wu\Desktop\jiang.png">
+                        <collision-poly>
+                            <point x="0.432836" y="0.766719" />
+                            <point x="0.499561" y="0.0777605" />
+                            <point x="0.654083" y="0.612753" />
+                            <point x="0.640913" y="0.499222" />
+                            <point x="0.640913" y="0.363919" />
+                            <point x="0.499561" y="0.830482" />
+                            <point x="0.424934" y="0.247278" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="pao" sid="853175090866911">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="680901207516534">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="616829806980727">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="742767628436652" speed="5">
+                    <frame duration="1" hotspotX="0.500785" hotspotY="0.5" original-source="C:\Users\Arthur wu\Desktop\zi.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.215213" />
+                            <point x="0.652344" y="0.499072" />
+                            <point x="0.5" y="0.786642" />
+                            <point x="0.345703" y="0.499072" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="282564676220573">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="dp" sid="294024899683245">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="574868845941044">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="955778103337110">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="695146166719571" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500928" original-source="C:\Users\Arthur wu\Desktop\game\5555.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.215213" />
+                            <point x="0.652344" y="0.499072" />
+                            <point x="0.5" y="0.786642" />
+                            <point x="0.345703" y="0.499072" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="dfg" sid="298755750498278">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Button" sid="688776656857076">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="Sprite2" sid="573581986503166">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="828057129487768" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="737334290325000">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="331478077136091" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Keyboard" sid="335944609674755">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="144212651134807">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Arthur wu\Desktop\mori.jpg" />
+        </object-type>
+        <object-type name="Text" sid="475701196304092">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
+        <layout>Layout 3.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="4" />
+        <global-instance type="Keyboard" uid="8" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>

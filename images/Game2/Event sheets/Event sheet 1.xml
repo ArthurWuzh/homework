@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="score" sid="578971283692733" static="0" type="number">0</variable>
+        <event-block sid="864248414857866">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="562537869516766" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="754155770391191" type="iron">
+                    <param id="0" name="X">Mouse.X</param>
+                    <param id="1" name="Y">Mouse.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="818222125762778">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="910544973350121" type="System">
+                    <param id="0" name="Interval (seconds)">0.2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="789539194449301" type="iron">
+                    <param id="0" name="Object">pao</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="632910327315857" type="pao">
+                    <param id="0" name="Angle">-90</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="848374421966678" type="iron">
+                    <param id="0" name="Object">pao</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="397885065069735" type="pao">
+                    <param id="0" name="Angle">30</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="650350188328864" type="iron">
+                    <param id="0" name="Object">pao</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="356506358408958" type="pao">
+                    <param id="0" name="Angle">150</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="788989901668224">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="135361179075490" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="894539367927125" type="System">
+                    <param id="0" name="Object to create">Sprite</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">random(800)</param>
+                    <param id="3" name="Y">random(800)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="262990574143797">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="755391197893314" type="iron">
+                    <param id="0" name="Object">dp</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="347806010429557" type="dp" />
+                <action id="-9" name="Destroy" sid="858054078438004" type="iron" />
+            </actions>
+        </event-block>
+        <event-block sid="136044767608430">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="960043505169140" type="pao">
+                    <param id="0" name="Object">dp</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="530202310660725" type="dp" />
+                <action id="-9" name="Destroy" sid="497606556545703" type="pao" />
+            </actions>
+        </event-block>
+        <event-block sid="371146465791736">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="991769025090882" type="Sprite">
+                    <param id="0" name="Object">pao</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="352583511504501" type="Sprite" />
+                <action id="-9" name="Destroy" sid="410517951761524" type="pao" />
+            </actions>
+        </event-block>
+        <event-block sid="199758937095122">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="556349799996316" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="235736173073874">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="270802066781136" type="System">
+                    <param id="0" name="Interval (seconds)">0.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="214152496508856" type="Sprite">
+                    <param id="0" name="Object">dp</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-22" name="Set angle toward position" sid="194910199236250" type="dp">
+                    <param id="0" name="X">iron.X</param>
+                    <param id="1" name="Y">iron.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="729940895856045">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="632276652156418" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="955950504250022" type="System">
+                    <param id="0" name="Layout">Layout 1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
