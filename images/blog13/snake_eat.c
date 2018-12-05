@@ -1,14 +1,14 @@
 #define food_char '$'
 
-struct FOOD
+struct FOOD//食物的结构位置 
 {
     int x;
     int y;
 }food;
 
-void SpawnFood () 
+void fo () 
 {
-    food.x = rand() % 8 + 1;
+    food.x = rand() % 8 + 1;//随机出现食物 
     food.y = rand() % 9 + 1; 
     while(map[food.y][food.x] != blank_char) {
         food.x = rand() % 8 + 1;
@@ -20,7 +20,7 @@ void SpawnFood ()
 
 void snakeextent(){
 	if(map[snake.y[0]][snake.x[0]] != blank_char && map[snake.y[0]][snake.x[0]] != food_char) GameOver();
-    if(map[snake.y[0]][snake.x[0]] == food_char ) 
+    if(map[snake.y[0]][snake.x[0]] == food_char )//若吃到食物，长度加一 
     {
         map[snake.y[0]][snake.x[0]] = head;
         snake.lenth++;
@@ -30,12 +30,12 @@ void snakeextent(){
 } 
 int main() 
 {
-    InitGame() ;
-    while (gamerun) 
+    in() ;
+    while (run) 
     {
         srand(time(NULL));
         MoveSnake();
-        if(!IsFood) SpawnFood ();
+        if(!IsFood) fo ();
         PrintMap();
     }
     return 0;
